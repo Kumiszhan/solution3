@@ -16,15 +16,17 @@ body {
   border: 0;
 }
 
+#header-nav button {
+    margin-top: 22px;
+}
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #BA55D3;
-  font-size: 1.5em;
+   font-weight: bolder;
+    font-size: 1.8em;
   text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: auto;
@@ -33,6 +35,18 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+.navbar-collapse {
+    border-top: 0;
+}
+
+.navbar-brand, .navbar-nav li a {
+    line-height: 76px;
+    height: 76px;
+    padding-top: 0;
+}
+#nav-list {
+    background-color: #FAF1DD;
+}
 
 a span {
   font-size: 1.2em;
@@ -40,15 +54,42 @@ a span {
   color: #BA55D3;
   text-align: center;
 }
+#nav-list a {
+    /*text-align: center;*/
+    font-weight: bolder;
+    color: #282828;
+    font-size: 1.2em;
+}
+#nav-list a:hover {
+    color: #9400D3;
+    background-color: #D8BFD8;
+}
   
-  h1 {
-  margin-bottom: 15px;
-  font-size: 1.75em;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+#main-content {
+    width: 92%;
+    margin-bottom: 30px;
+}
+#main-content h1 {
+    font-size: 2.9em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#main-content h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
-p {
+#chicken-tile, #beef-tile, #sushi-tile {
+    width: 100%;
+    padding: 20px;
+    background-color: #99ed7b;
+    margin-bottom: 60px;
+    box-shadow: 0 0 80px #18580b;
+}
+
+/*p{
 font-size: 18px;
 padding: 10px;
 margin: 0px;
@@ -102,7 +143,7 @@ section {
   width: 30%;
   margin-left: 60%;
     }
-
+*/
 
 /* Simple Responsive Framework. */
 .row {
